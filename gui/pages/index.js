@@ -19,7 +19,7 @@ import Status from "./Status.svelte";
 import Settings from "./Settings.svelte";
 import Log from "./Log.svelte";
 import Notifications from "./Notifications.svelte";
-import About from "./About.svelte";
+// import About from "./About.svelte";
 
 import NotFound from "./NotFound.svelte";
 import Error from "./Error.svelte";
@@ -398,7 +398,7 @@ export default {
   [PageUrls.system_log]: Log,
   [PageUrls.system_notifications]: Notifications,
 
-  ['/about/']: About,
+  // ['/about/']: About,
 
   [PageUrls.Error]: Error,
   // The catch-all route must always be last

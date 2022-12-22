@@ -491,13 +491,13 @@
     </div>
   </div>
   <footer class="main-footer p-2 text-sm">
-    &copy; 2015 - 2022 <a target="_blank" rel="noopener noreferrer" href="https://theyosh.nl">TheYOSH</a>
+    &copy; 2015 - 2022 TheYOSH
     <!-- Credits to the original builders. The least I can do -->
     <small>
-      using <a target="_blank" rel="noopener noreferrer" href="https://adminlte.io">AdminLTE</a>,
-      <a target="_blank" rel="noopener noreferrer" href="https://svelte.dev">Svelte</a>
+      using AdminLTE,
+      Svelte
       and
-      <a target="_blank" rel="noopener noreferrer" href="https://github.com/KeenMate/rollup-svelte-adminlte-template">KeenMate template</a>
+      KeenMate template
     </small>
     <div class="float-right d-sm-inline-block">
       <small class="badge badge-success opacity-1" title="{$_('footer.current_activity')}">&nbsp;&nbsp;</small>
@@ -507,16 +507,11 @@
         >&nbsp;&nbsp; {settings.name}
         {settings.version} - <small>{settings.device}</small> -
         {#if $isAuthenticated}
-          <a
-            href="https://github.com/theyosh/TerrariumPI/commit/{settings.gitversion}"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Git commit">{settings.gitversion.substring(0, 8)}</a> -
+          {settings.gitversion.substring(0, 8)} -
         {/if}
       </span>
       <small>
-        <a href="https://github.com/theyosh/TerrariumPI" target="_blank" rel="noopener noreferrer" title="Download TerrariumPI on Github"
-          >Terrarium home automation</a>
+        Terrarium home automation
       </small>
     </div>
   </footer>
